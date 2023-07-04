@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-03T03:55:51Z" name="Default suite" finished-at="2023-07-03T03:57:09Z" duration-ms="78139">
+    <groups>
+    </groups>
+    <test started-at="2023-07-03T03:55:51Z" name="Default test" finished-at="2023-07-03T03:57:09Z" duration-ms="78139">
+      <class name="testLayer.LoginTest">
+        <test-method is-config="true" signature="initsetup()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:55:47Z" name="initsetup" finished-at="2023-07-03T03:55:51Z" duration-ms="4748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initsetup -->
+        <test-method signature="CustomerReviewFilterFeature()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:55:51Z" name="CustomerReviewFilterFeature" finished-at="2023-07-03T03:55:58Z" duration-ms="6502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomerReviewFilterFeature -->
+        <test-method signature="HighToLowFilterFeature()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:55:58Z" name="HighToLowFilterFeature" finished-at="2023-07-03T03:56:02Z" duration-ms="4096" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HighToLowFilterFeature -->
+        <test-method signature="LowToHighFilterFeature()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:02Z" name="LowToHighFilterFeature" finished-at="2023-07-03T03:56:06Z" duration-ms="4492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LowToHighFilterFeature -->
+        <test-method signature="NewestArrivalsFilterFeature()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:06Z" name="NewestArrivalsFilterFeature" finished-at="2023-07-03T03:56:10Z" duration-ms="3932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewestArrivalsFilterFeature -->
+        <test-method signature="VerifySearchFeature()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:10Z" name="VerifySearchFeature" finished-at="2023-07-03T03:56:12Z" duration-ms="2069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchFeature -->
+        <test-method signature="validateYourAddress()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:12Z" name="validateYourAddress" finished-at="2023-07-03T03:56:21Z" duration-ms="8301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateYourAddress -->
+        <test-method signature="verifyAddToCart()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:21Z" name="verifyAddToCart" finished-at="2023-07-03T03:56:44Z" duration-ms="23480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAddToCart -->
+        <test-method signature="verifyTitle()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:44Z" name="verifyTitle" finished-at="2023-07-03T03:56:44Z" duration-ms="43" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Amazon.ca: Low Prices – Fast Shipping – Millions of Items] but found [Amazon.ca Shopping Cart]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Amazon.ca: Low Prices – Fast Shipping – Millions of Items] but found [Amazon.ca Shopping Cart]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testLayer.LoginTest.verifyTitle(LoginTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="yourOrdersVerification()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:44Z" name="yourOrdersVerification" finished-at="2023-07-03T03:56:59Z" duration-ms="14266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yourOrdersVerification -->
+        <test-method signature="yourPaymentVerification()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:56:59Z" name="yourPaymentVerification" finished-at="2023-07-03T03:57:09Z" duration-ms="10912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- yourPaymentVerification -->
+        <test-method is-config="true" signature="close()[pri:0, instance:testLayer.LoginTest@29647f75]" started-at="2023-07-03T03:57:10Z" name="close" finished-at="2023-07-03T03:57:19Z" duration-ms="8997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- testLayer.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
